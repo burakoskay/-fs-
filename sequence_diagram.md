@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
 
 box rgb(255,150,0,0.25) Client Side
