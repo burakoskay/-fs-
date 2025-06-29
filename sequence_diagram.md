@@ -14,7 +14,7 @@ box rgb(0,150,150,0.25) Server Side
     
     browser->>server: GET <br>https://studies.cs.helsinki.fi/exampleapp/main.css
     activate server
-    Note right of browser: The HTML document contains a stylesheet so the browser makes a request for it.
+    Note right of browser: The HTML document contains a reference to css so the browser makes a request for it.
     server-->>browser: Server sends the css file
     deactivate server
 
