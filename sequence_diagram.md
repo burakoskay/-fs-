@@ -40,4 +40,4 @@ box rgb(0,150,150,0.25) Server Side
     
     browser->>server: POST<br>browser submits the form as a new note<br>https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     server->>browser: server returns {message: "note created"} message:"note created" <br>and<br>Payload: {content: "whoa", date: "2025-06-29T18:55:30.354Z"}content:"whoa" date: "2025-06-29T18:55:30.354Z"
-    Note right of browser: spa.js handles the appearance of the new note<br>without the need of refreshing the whole page
+    Note right of browser: spa.js handles the appearance of the new note <b>dynamically</b><br>without the need of refreshing the whole page
