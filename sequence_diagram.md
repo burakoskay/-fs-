@@ -26,7 +26,7 @@ box rgb(0,150,150,0.25) Server Side
     deactivate server
 
     rect rgb(255, 0, 0,0.5)
-    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server
+    Note right of browser: the browser starts executing the JavaScript code that fetches the JSON from the server
     end
 
     browser->>server: GET <br> https://studies.cs.helsinki.fi/exampleapp/data.json
@@ -35,16 +35,7 @@ box rgb(0,150,150,0.25) Server Side
     deactivate server
 
     rect rgb(255, 0, 0,0.5)
-    Note right of browser: The browser executes the callback function that renders the notes
-    end
-
-    browser->>server: GET <br> https://studies.cs.helsinki.fi/exampleapp/data.json
-    activate server
-    server-->>browser: [{content: "efd", date: "2025-06-29T02:19:43.593Z"}, {content: "ok", date: "2025-06-29T02:48:41.455Z"},…]
-    deactivate server
-
-    rect rgb(255, 0, 0,0.5)
-    Note right of browser: The browser executes the callback function that renders the notes
+    Note right of browser: the browser executes the callback function that renders the notes
     end
     
     browser->>server: POST<br>browser submits the form as a new note<br>https://studies.cs.helsinki.fi/exampleapp/new_note_spa
